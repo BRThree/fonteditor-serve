@@ -21,6 +21,11 @@ spring:
           socketFactory.port: 465
           socketFactory.fallback: false
           ssl.enable: false
+
+mail:
+  fromMail:
+    fromAddress: d1534400213@163.com
+
 logging:
   level:
     com.brthree: debug
@@ -35,3 +40,4 @@ mybatis-plus:
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+  type-handlers-package: com.brthree.handler.typeHandler

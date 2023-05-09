@@ -18,7 +18,7 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
     public String generateVerificationCode() {
         Random random = new Random();
         StringBuilder verificationCode = new StringBuilder();
-        int generateVerificationCodeLength = 4;
+        int generateVerificationCodeLength = 6;
         while (verificationCode.length()< generateVerificationCodeLength){
             int i = random.nextInt(metaCode.length);
             verificationCode.append(metaCode[i]);
